@@ -1,4 +1,4 @@
-# Activity 1
+# Part 1
 
 ## Questions
 1. The bug does not always move with each step. If its front is clear it will move but if it isn't it will turn.
@@ -28,3 +28,8 @@
 2. You can move the bug any legal place, neither the direction nor the distance matter. If you try to move the bug outside of the grid, an invalid location error is thrown.
 3. To change the color of an actor, the setColor() method is used.
 4. The bug is destroyed.
+
+# Part 2
+
+
+## Questions
