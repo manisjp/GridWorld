@@ -33,3 +33,10 @@
 
 
 ## Questions
+1. The instance variable sideLength determines the size of the box the bug creates.
+2. The instance variable steps tells the bug when to start its turn
+3. The turn method only turns a bug 45°. The bug must turn 90° so the method must be called twice.
+4. The BoxBug class inherits from the Bug class so it is guaranteed to have the classes availible to the Bug class.
+5. The BoxBug's sideLength variable will not change after construction.
+6. The BoxBug will turn and begin a new square of the same size once its front is clear.
+7. The value of steps will be zero after each turn.
