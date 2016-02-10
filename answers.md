@@ -43,3 +43,9 @@
 
 ## Exercises
 1. It turns 45° after the steps is equal to the sideLength instead of 90°. It makes a oxagon.
+5. To create a new BoxBug called Jimmy it should be initialized in the runner. If initialized in this way, jimmy will be blue in color and start near the top left corner.
+```java
+BoxBug jimmy = new BoxBug();
+jimmy.setColor(Color.BLUE);
+world.add(new Location(1, 1), jimmy);
+```
