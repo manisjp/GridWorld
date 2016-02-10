@@ -14,17 +14,18 @@
 
 ## Exercises
 1.
-| °   | Direction |
-|-----|-----------|
-| 0   | North     |
-| 45  | Northeast |
-| 90  | East      |
-| 135 | Southeast |
-| 180 | South     |
-| 225 | Southwest |
-| 270 | West      |
-| 315 | Northwest |
-| 360 | North     |
+|°|Direction|
+|:---:|:---:|
+|0|North|
+|45|Northeast|
+|90|East|
+|135|Southeast|
+|180|South|
+|225|Southwest|
+|270|West|
+|315|Northwest|
+|360|North|
+
 2. You can move the bug any legal place, neither the direction nor the distance matter. If you try to move the bug outside of the grid, an invalid location error is thrown.
 3. To change the color of an actor, the setColor() method is used.
 4. The bug is destroyed.
