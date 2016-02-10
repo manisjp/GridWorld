@@ -40,3 +40,6 @@
 5. The BoxBug's sideLength variable will not change after construction.
 6. The BoxBug will turn and begin a new square of the same size once its front is clear.
 7. The value of steps will be zero after each turn.
+
+## Exercises
+1. It turns 45° after the steps is equal to the sideLength instead of 90°. It makes a oxagon.
