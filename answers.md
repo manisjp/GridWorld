@@ -54,4 +54,17 @@ world.add(new Location(1, 1), jimmy);
 
 ## Questions
 
+### Set 3
+1. To get the row: public int firstRow = getRow(loc1)
+2. The locations are not the same so the boolean's value will be false
+3. Loc3 will be at (4, 4)
+4. dir will be 135
+5. The method takes in a direction. It will place the new actor one space away from the original actor, in the direction given
+
+### Set 4
+1. You can make a for loop that starts on the second row and uses the Arraylist method getNeighbors(Location loc), repeating this for every third line. This will use he fewest amount of check. In order to ensure everything is checked, you must make it check the second to last line in every grid
+2. The method isValid(10, 10) will return true if the location is exists and false if it doesn't
+3. The Grid class is an interface so it just contains a list of methods. The methods are contained in the Bounded and Unbounded classes.
+4. The ArrayList is a better choice as it can be 
+
 ## Exercises
