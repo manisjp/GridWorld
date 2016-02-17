@@ -43,7 +43,7 @@
 ## Exercises
 1. It turns 45° after the steps is equal to the sideLength instead of 90°. It makes a oxagon.
 5. To create a new BoxBug called Jimmy it should be initialized in the runner. If initialized in this way, jimmy will be blue in color and start near the top left corner.
-``` java
+```java
 BoxBug jimmy = new BoxBug();
 jimmy.setColor(Color.BLUE);
 world.add(new Location(1, 1), jimmy);
@@ -64,6 +64,44 @@ world.add(new Location(1, 1), jimmy);
 1. You can make a for loop that starts on the second row and uses the Arraylist method getNeighbors(Location loc), repeating this for every third line. This will use he fewest amount of check. In order to ensure everything is checked, you must make it check the second to last line in every grid
 2. The method isValid(10, 10) will return true if the location is exists and false if it doesn't
 3. The Grid class is an interface so it just contains a list of methods. The methods are contained in the Bounded and Unbounded classes.
-4. The ArrayList is a better choice as it can be 
+4. The ArrayList is a better choice as its length can be altered while an Array's length cannot
 
-## Exercises
+### Set 5
+1. Every actor has a color, location, and direction
+2. Default direction is north and default color is red
+3. Actor needs to be a class and not an interface because it needs to have methods
+4. An actor cannot be in two places at once. It only has one location. Therefore it must remove itself before it can replace itself. It also cannot remove itself twice either. An acor can place and remove itself
+5. The actor must turn twice in order to turn 90° to the right
+
+### Set 6
+1. It checks to see if the next spot is null (filled) 
+``` java
+if (gr == nul) {
+    return false;
+}
+```
+2. It checks to see if the next spot exists
+``` java
+if (!gr.isValid(next)) {
+    return false;
+}
+```
+3. The canMove() method must use the isValid method from the grid interface in order to work
+4. The canMove() method uses the getAdjacentLocation() method in order to know what spot to check for validity
+5. The methods getGrid() and getLocation()
+6. The method will return false if the next location is out of the grid or filled by something due to the canMove() method.
+7. It is possible to use the getLocation() method exclusively but it would not be as efficient as using the loc variable
+8. Both the bug and the flower it drops inherrit from the same place
+9. It will place a flower after it has been removed from the grid. Both happen in the move() method
+10. This is how a bug places a flower
+``` java
+Flower flower = new Flower(getColor());
+flower.putSelfInGrid(gr, loc);
+```
+11. To turn 180° it will have to call the turn() method 4 times
+
+# Part 4
+
+## Questions
+
+### Set 7
