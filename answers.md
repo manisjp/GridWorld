@@ -105,3 +105,22 @@ flower.putSelfInGrid(gr, loc);
 ## Questions
 
 ### Set 7
+1. The methods implemented in the Critter class are act(), getActors(), processActors(ArrayList<Actor> actors), getMoveLocations(), and selectMoveLocation(ArrayList<Location> locs)
+2. The five basic actions common to all critters are getActors(), processActors(ArrayList<Actor> actors), getMoveLocations(), and selectMoveLocation(ArrayList<Location> locs)
+3. Subclasses should overwrite the getActors() method if they need to find other things farther then 1 space away or in a different pattern then a box around the Critter
+4. It will check if an actor is a rock or a critter. If it is neither of those it will remove the actor from the grid
+5. The first line grabs the possible moves, the second picks the spot to move to, and the third makes the move happen
+``` java
+ArrayList<Location> moveLocs = getMoveLocations();
+Location loc = selectMoveLocation(moveLocs);
+makeMove(loc);
+```
+6. Critter extends from the Actor class. The Actor class contains a constructor that the Critter class utilizes
+
+### Set 8
+1. A ChameleonCritter will act different from a Critter despite act() not being overwritten because act() calls the makeMove() and processActors() methods which have been overwritten by the ChameleonCritter class.
+2. The "super." part tells the method to use the parent class' method of the same name
+3. One way to achieve this is by overwriting the makeMove() method and adding in the same process by which the Bug leaves a flower
+4. The ChameleonCritter class had no need to overide the getActors() method. It will find all adjecent actors
+5. The Actor class contains the getLocation() method
+6. A Critter can access its own grid by using the getGrid() method from the Grid interface
