@@ -124,3 +124,9 @@ makeMove(loc);
 4. The ChameleonCritter class had no need to overide the getActors() method. It will find all adjecent actors
 5. The Actor class contains the getLocation() method
 6. A Critter can access its own grid by using the getGrid() method from the Grid interface
+
+### Set 9
+1. CrabCritter doesn't overwrite the processActors() method because it has no need to do so. It will processActors() just like any old bug
+2. The CrabCritter gets its actors in a cone in front of it. It checks three spaces, diagnoly right and left, as well as right in front of it
+3. Its a method that takes in an array of locations and checks every one
+4. A CrabCritter at (3, 4) facing south will get actors from (4, 3), (4, 4), and (4, 5).
